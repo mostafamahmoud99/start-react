@@ -1,0 +1,58 @@
+.about {
+  margin: 4rem auto;
+  background-color: #1abc9c;
+}
+
+.item {
+  width: 60%;
+  margin: 2rem auto;
+  padding: 5rem;
+}
+
+.line {
+  position: relative;
+  width: 70px;
+  margin: 2rem auto;
+}
+
+.line i {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.line::before {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 120px;
+  height: 5px;
+  border-radius: 5px;
+  transform: translateX(50%);
+}
+
+.line::after {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 120px;
+  height: 5px;
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+.cap p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+@media (max-width:991px) {
+  .item{
+    width: 100%;
+    padding: 4rem 1.5rem;
+  }
+}
